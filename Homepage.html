@@ -1,0 +1,80 @@
+
+<!-- ################################ -->
+<!-- ######### Introduktion ######### -->
+<!-- ################################ -->
+
+<!-- Detta webbprojekt är skapat av fem studenter från Systemvetenskapliga programmet vid Högskolan Dalarna, H24 -->
+<!-- Projektet innehåller en huvudsida kallad "Homepage", där användaren kan klicka på respektive students sida för att läsa om deras profil -->
+<!-- HTML och CSS har använts i projektet, tillsammans med logotyper och bilder i .png- och .jpg-format -->
+<!-- Olika tekniker och kodningssätt har tillämpats i både HTML och CSS för att demonstrera studenternas lärande -->
+
+<!-- HTML koden börjar härifrån  -->
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description"
+            content="Class Portfolio showcasing various projects and skills." />
+        <meta name="author" content="Grupp 4" />
+        <title>Class Portfolio</title>
+        <link rel="icon" type="image/png" href="Images/Homepage_favicon.png" />
+        <link rel="stylesheet" href="Homepage.css" />
+    </head>
+
+    <!-- Body består av -->
+    <body>
+
+        <!-- Banner innehåller sidhuvudet och navigeringsfältet -->
+        <div class="banner">
+            <header>
+                <!-- Huvudrubrik för sidan -->
+                <h1>Welcome to Our Class Portfolio</h1>
+            </header>
+
+            <!-- Navigeringsmeny med länkar till varje students profil -->
+            <div class="navbar">
+                <!-- Logotypen för portfolion -->
+                <img src="Images/Homepage_logo.png" alt="Class Portfolio Logo"
+                    class="logo">
+                <ul>
+                    <!-- Länkar till studenternas sidor, öppnas i en ny flik -->
+                    <li><a href="Samir.html" target="_blank">Samir</a></li>
+                    <li><a href="Rickard.html" target="_blank">Rickard</a></li>
+                    <li><a href="Hangama.html" target="_blank">Hangama</a></li>
+                    <li><a href="Martin.html" target="_blank">Martin</a></li>
+                    <li><a href="Ludwig.html" target="_blank">Ludwig</a></li>
+                </ul>
+            </div>
+
+            <!-- Huvudinnehåll med en rubrik och beskrivande text om projektet -->
+            <div class="content">
+                <h1>OUR FIRST WEBPROJECT</h1>
+                <p>
+                    This is the homepage for our class portfolio. Each link
+                    above leads to a different student's personal page, where
+                    you can learn more about their interests and projects.
+                </p>
+            </div>
+        </div>
+
+        <!-- Knappcontainer för att hålla knapparna strukturerat -->
+        <div class="button-container">
+            <!-- Knapp för feedback -->
+            <button id="myButton1" type="button">Feedback</button>
+            <!-- Knapp för att gå med, -->
+            <button id="myButton2" type="button">Join us</button>
+        </div>
+
+        <!-- Sidfoten med copyright-information -->
+        <footer>
+            <p id="lastnote">Copyright © 2024</p>
+        </footer>
+
+    </body>
+</html>
+
+<!-- Referenser:
+Favicon Generator: https://favicon.io/favicon-generator/
+Learn to Code: https://www.w3schools.com/
+Unsplash: https://unsplash.com/ -->

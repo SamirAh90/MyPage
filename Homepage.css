@@ -1,0 +1,144 @@
+/* ################################
+<  ###### CSS för Home Page #######
+<  ################################ */
+
+/* Återställer marginaler och padding för alla element och ställer in ett standard teckensnitt */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+/* Ställer in en mörk bakgrundsfärg för sidan */
+body {
+  background-color: #121212;
+}
+
+/* Stil för alla h1-rubriker */
+h1 {
+  color: white;
+  text-align: center;
+  padding: 22px 0;
+  width: 100%;
+  position: relative;
+  font-size: 2.5rem;
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Banner-sektionen tar upp hela skärmens höjd med en bakgrundsbild */
+.banner {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url(Images/homepagephoto.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+/* Navbar är centralt inriktad och stylad */
+.navbar {
+  width: 70%;
+  margin: 0 auto;
+  padding: 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Logotypens stil i navbar */
+.logo {
+  width: 120px;
+  cursor: pointer;
+}
+
+.logo:hover {
+  transform: scale(2.5);
+  background-color: transparent;
+}
+/* Stil för navbar-listan */
+.navbar ul {
+  display: flex;
+}
+
+/* Stil för varje lista i navbar */
+.navbar ul li {
+  list-style: none;
+  margin: 0 25px;
+  position: relative;
+}
+
+/* Stil för länkar i navbar */
+.navbar ul li a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* Understreckseffekt vid hover över länkar i navbar */
+.navbar ul li::after {
+  content: "";
+  height: 4px;
+  width: 0;
+  background: #1198a7;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: width 0.3s ease;
+}
+
+/* Breddar strecket vid hover */
+.navbar ul li:hover::after {
+  width: 100%;
+}
+
+/* Stil för innehållssektionen */
+.content {
+  width: 100%;
+  font-size: 1.2rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  color: #fff;
+  margin-top: 50px;
+}
+
+/* Stil för knapparna "Feedback" och "Join us" */
+#myButton1,
+#myButton2 {
+  padding: 10px 15px;
+  text-align: center;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 12px;
+  border: 1px solid #fff;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+  position: fixed;
+  bottom: 60px;
+}
+
+/* Position för den första knappen (Feedback) */
+#myButton1 {
+  right: 120px;
+}
+
+/* Position för den andra knappen (Join Us) */
+#myButton2 {
+  right: 40px;
+}
+
+/* Stil för sidfotens sista meddelande */
+#lastnote {
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}

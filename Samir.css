@@ -1,0 +1,189 @@
+/* Importerar Poppins-teckensnittet från Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
+
+/* Grundläggande återställning av standardmarginaler, paddingar och andra stilar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  font-family: "Poppins", sans-serif; /* Använder Poppins-teckensnittet */
+}
+
+/* Grundstorlek på teckensnittet för html-elementet */
+html {
+  font-size: 62.5%; /* 1rem = 10px */
+}
+
+/* Grundinställningar för hela body av sidan */
+body {
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+  background-color: #1c1f4a;
+  color: white;
+}
+
+/* Stilar för headern som är fixerad högst upp på sidan */
+header {
+  margin-top: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 9%;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+/* Stilar för logotypen i headern */
+.logo {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #f0c419;
+  cursor: pointer;
+  position: relative;
+  transition: 0.8s ease;
+  transform-origin: center;
+}
+
+/* Stilar för logotypen vid hover */
+.logo:hover {
+  transform: scale(1.5);
+}
+
+/* Stilar för navigeringsmenyn i headern */
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/* Stilar för länkarna i navigeringsmenyn */
+nav a {
+  font-size: 1.8rem;
+  color: white;
+  margin-left: 4rem;
+  font-weight: 500;
+  transition: 0.3s ease;
+  border-bottom: 3px solid transparent;
+  display: inline-block;
+}
+
+/* Stilar för länkarna vid hover och aktivt tillstånd */
+nav a:hover,
+nav a:active {
+  padding: 0.6rem;
+  border-radius: 0.6rem;
+  border-bottom: 0.6rem solid #f0c419;
+}
+
+/* Grundinställningar för sektioner */
+section {
+  min-height: 100vh;
+  padding: 5rem 9% 5rem;
+}
+
+/* Stilar för hem-sektionen */
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8rem;
+  background-color: #1c1f4a;
+}
+
+/* Stilar för huvudrubriken i hem-sektionen */
+.home .home-content h1 {
+  font-size: 6rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+/* Guldtext för markerad text */
+span {
+  color: #f0c419;
+}
+
+/* Stilar för underrubriker i hem-sektionen */
+.home-content h3 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+/* Stilar för paragraftext */
+p {
+  font-size: 1.4rem;
+}
+
+/* Stilar för profilbilden i hem-sektionen */
+.home-img img {
+  position: relative;
+  width: 45rem;
+  border-radius: 50%;
+  box-shadow: 0 0 25px #f0c419;
+  cursor: pointer;
+}
+
+/* Stilar för sociala ikonlänkar */
+.social-icons a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+  background-color: transparent;
+  border: 0.2rem solid #f0c419;
+  font-size: 2rem;
+  border-radius: 50%;
+  margin: 3rem 0.5rem 3rem 0rem;
+  transition: 0.3s ease;
+  color: #ffffff;
+}
+
+/* Stilar för sociala ikoner vid hover */
+.social-icons a:hover {
+  color: #1c1f4a;
+  transform: scale(1.3) translateY(-5px);
+  background-color: #f0c419;
+  box-shadow: 0 0 0 5px #f0c419;
+}
+
+/* Stilar för knappar */
+.button {
+  display: inline-block;
+  padding: 1rem 2.8rem;
+  background-color: #1c1f4a;
+  border-radius: 4rem;
+  font-size: 1.6rem;
+  color: #f0c419;
+  letter-spacing: 0.3rem;
+  font-weight: 600;
+  border: 2px solid #f0c419;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+/* Stilar för knappar vid hover */
+.button:hover {
+  transform: scale(1.03);
+  background-color: #f0c419;
+  color: #1c1f4a;
+  box-shadow: 0 0 35px #f0c419;
+}
+
+/* Stilar för sista noten */
+#lastnote {
+  color: white;
+  text-align: left;
+  padding: 20px 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
